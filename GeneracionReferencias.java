@@ -3,6 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
 public class GeneracionReferencias {
     int tamPag;
     int nFilas;
@@ -22,6 +23,8 @@ public class GeneracionReferencias {
 
 
         nPaginas = Math.ceilDiv((((nFilas*nColumnas)*2*4) + (9*4)), tamPag);
+      //nPaginas = (((nFilas * nColumnas) * 2 * 4) + (9 * 4) + tamPag - 1) / tamPag;
+ 
         instrucciones = new ArrayList<>();
     }
 
