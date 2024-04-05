@@ -22,8 +22,8 @@ public class GeneracionReferencias {
         this.nColumnas = nColumnas;
 
 
-        nPaginas = Math.ceilDiv((((nFilas*nColumnas)*2*4) + (9*4)), tamPag);
-      //nPaginas = (((nFilas * nColumnas) * 2 * 4) + (9 * 4) + tamPag - 1) / tamPag;
+        //nPaginas = Math.ceilDiv((((nFilas*nColumnas)*2*4) + (9*4)), tamPag);
+        nPaginas = (((nFilas * nColumnas) * 2 * 4) + (9 * 4) + tamPag - 1) / tamPag;
  
         instrucciones = new ArrayList<>();
     }
